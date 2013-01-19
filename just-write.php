@@ -13,7 +13,7 @@ Author URI: http://andrewspittle.net/
 */
 
 function jw_enqueue( $hook ) {
-    if ( 'post-new.php' != $hook )
+    if ( 'post-new.php' != $hook and 'post.php' != $hook )
         return;
     wp_enqueue_script( 'jw_fullscreen', plugins_url( '/jw-fullscreen.js', __FILE__ ) );
 }
